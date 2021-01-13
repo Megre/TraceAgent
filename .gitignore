@@ -1,4 +1,8 @@
-**/pich/*
+**/ipch/*
+**/*.log
+**/Debug
+**/Release
+**/ReadMe.txt
 
 # Prerequisites
 *.d
