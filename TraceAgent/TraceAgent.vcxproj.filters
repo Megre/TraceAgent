@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Errors.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="ThreadRecord.cpp" />
+    <ClCompile Include="TraceAgent.cpp" />
+    <ClCompile Include="TraceFilter.cpp" />
+    <ClCompile Include="Output.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AgentException.h" />
+    <ClInclude Include="Errors.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ThreadRecord.h" />
+    <ClInclude Include="TraceAgent.h" />
+    <ClInclude Include="TraceFilter.h" />
+    <ClInclude Include="Output.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="od">
+      <UniqueIdentifier>{a8813c5f-21a2-4962-8c30-0fbc1be73746}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

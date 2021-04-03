@@ -1,0 +1,7 @@
+method_entry: LHelloWorld;main, thread_id: 0
+  method_entry: LHelloWorld;<init>, thread_id: 0
+      field_modi: Ljava/lang/String;word, dec_cls: LHelloWorld;, in_method: LHelloWorld;<init>, field_obj_tag: 2, owner_obj_tag: 1, thread_id: 0
+  method_exit: LHelloWorld;<init>, thread_id: 0
+  method_entry: LHelloWorld;sayHello, thread_id: 0
+  method_exit: LHelloWorld;sayHello, thread_id: 0
+method_exit: LHelloWorld;main, thread_id: 0

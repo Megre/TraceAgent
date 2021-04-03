@@ -1,8 +1,8 @@
 **/ipch/*
-**/*.log
 **/Debug
 **/Release
 **/ReadMe.txt
+*.sdf
 
 # Prerequisites
 *.d
