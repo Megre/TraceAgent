@@ -20,7 +20,7 @@ TraceAgent is a Java agent library used for runtime trace. It is deployed as a D
 
 # Example
 
-Here is a `HelloWorld` class:
+Here is a [HelloWorld](https://github.com/Megre/TraceAgent/blob/main/HelloWorld.java) class:
 
     public class HelloWorld {
 	
@@ -35,14 +35,14 @@ Here is a `HelloWorld` class:
     	}
     }
     
-The following commands can be used (e.g. in the batch file `trace.bat`) to trace the method and filed events during its execution. 
+The following commands can be used (e.g. in the batch file [trace.bat](https://github.com/Megre/TraceAgent/blob/main/trace.bat)) to trace the method and filed events during its execution. 
 
     set agent=x64\Release\TraceAgent.dll
     set logFile=trace.log
     
     java -classpath . "-agentpath:%agent%=method=L(HelloWorld)#field=L(HelloWorld)#log=%logFile%" HelloWorld
 
-The events are recorded in `trace.log`:
+Traced events are recorded in [trace.log](https://github.com/Megre/TraceAgent/blob/main/trace.log):
 
     method_entry: LHelloWorld;main, thread_id: 0
       method_entry: LHelloWorld;<init>, thread_id: 0
