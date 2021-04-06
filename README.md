@@ -8,15 +8,15 @@ TraceAgent is a Java agent library used for runtime trace. It is deployed as a D
 
 - `CLASS_PATH`: the path to search for classes.
 - `AGENT_PATH`: the path of the trace agent.
-- `PARAM`: the parameter passed the trace agent.
+- `PARAM`: the parameter passed to the trace agent.
 - `ENTRY_CLASS`: the Java class to execute.
     
 ### Parameter
 
     [method=<REGEX>][#field=<REGEX>][#log=<LOG_PATH>][#append=true]
 
-- `REGEX (regular expression)`: it matches the JNI (Java Native Interface) signature of a method or a field. A `REGEX` starting with "!" matches the negative of the regular expression followed.
-- `LOG_PATH`: the path to save the log. If "append=true" is set, new log lines will be appended to existing log.
+- `REGEX (regular expression)` matches the [JNI (Java Native Interface)](https://docs.oracle.com/javase/8/docs/technotes/guides/jni/spec/types.html) signature of a method or a field. A `REGEX` starting with "!" matches the negative of the regular expression followed.
+- `LOG_PATH`: the path to save the log. If "append=true" is set, new log lines will be appended to the existing log.
 
 # Example
 
@@ -35,7 +35,7 @@ Here is a [HelloWorld](https://github.com/Megre/TraceAgent/blob/main/HelloWorld.
     	}
     }
     
-The following commands can be used (e.g. in the batch file [trace.bat](https://github.com/Megre/TraceAgent/blob/main/trace.bat)) to trace the method and filed events during its execution. 
+The following commands can be used (e.g. in the batch file [trace.bat](https://github.com/Megre/TraceAgent/blob/main/trace.bat)) to trace the method and field events during its execution. 
 
     set agent=x64\Release\TraceAgent.dll
     set logFile=trace.log
